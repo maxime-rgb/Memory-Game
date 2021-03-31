@@ -1,0 +1,115 @@
+html,body{
+  position:relative;
+    height:100%;
+}
+body{
+  height: auto;
+  font-size:16px;
+  font-family: "consolas",monospace;
+  background-image: url(pics/abstrait.jpg);
+  background-size: cover;
+   
+}
+h1,h2{
+   font-family: 'Train One', cursive;
+   font-size: 3em;
+    text-align: center;
+}
+div{
+    width: 70vw;
+    margin:auto;
+    padding:10px;
+    display:grid;
+    background:transparent;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    border-radius: 5vw;
+}
+div span{
+    height:200px;
+}
+img {
+    width:100%;
+    height:300px;
+    border-radius: 30%;
+}
+
+*{
+    box-sizing:border-box;
+  }
+  
+  main{
+    text-align:center;
+  }
+  
+  .chrono{
+    width: 100%;
+    text-align:center;
+    margin: 1em auto;
+    font-size:2em;
+    color:white;
+  }
+  
+  .lap{
+    width: 100%;
+    text-align:center;
+    padding:1em;
+    font-size:1.5em;
+    overflow-y:auto;
+    color:white;
+  }
+  .buttons button{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    text-align:center;
+    font-size: 1.5em;
+    line-height:50px;
+    outline:none;
+    cursor: pointer;
+
+  }
+  .buttons{
+      text-align: center;
+    
+      
+  }
+  
+  .start,.addLap,.reset, .refresh{
+    background: linear-gradient(#1271ff,#4d00b2);
+    color: #330169;
+    border: 1px solid #5a00a5;
+    transition: all 500ms ease;
+    box-shadow: 0px 6px 10px -1px #29024a;
+  }
+  .isPause,
+  .start:hover,
+  .refresh:hover{
+    background: linear-gradient(#E91E63,#4908b8);
+    color: white;
+    border: 1px solid #c91a74;
+    transition: all 500ms ease;
+  }
+  .isPause{
+    transform: scale(0.7);
+    animation: pause 1s infinite linear;
+  }
+  @keyframes pause{
+    from{
+      background:#4908b8;
+      transform:scale(1.2);
+    }
+  }
+  
+  @keyframes change{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+  
+  
+  
+  
